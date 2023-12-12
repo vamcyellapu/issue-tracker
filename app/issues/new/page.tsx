@@ -5,6 +5,7 @@ import { createIssueSchema } from "@/app/validationSchemas";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Button, Callout, Text, TextField } from "@radix-ui/themes";
 import axios from "axios";
+
 import "easymde/dist/easymde.min.css";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
@@ -35,6 +36,7 @@ const NewIssuePage = () => {
       SetSubmitting(false);
     }
   });
+
   return (
     <div className="max-w-xl">
       {error && (
